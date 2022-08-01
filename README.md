@@ -9,8 +9,6 @@ Create a .env file in your root directory. Add you edaman API KEY and API ID
 
 ## Install Dependencies
 
-From Android Studio/IntelliJ: Click Packages get in the action ribbon at the top of pubspec.yaml. 
-OR
-From VS Code: Click Get Packages located in right side of the action ribbon at the top of pubspec.yaml.
-OR
-From the terminal: Run flutter pub get.
+- click pub get on IDE in the pubspec.yaml.
+
+- In terminal: Run flutter pub get.
