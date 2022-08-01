@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'data/sqlite/sqlite_repository.dart';
 import 'data/memory_repository.dart';
@@ -13,6 +14,8 @@ import 'ui/main_screen.dart';
 Future<void> main() async {
   _setupLogging();
   WidgetsFlutterBinding.ensureInitialized();
+
+  await dotenv.load(fileName: ".env");
 
   final repository = SqliteRepository();
   await repository.init();

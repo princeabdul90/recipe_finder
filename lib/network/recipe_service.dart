@@ -1,4 +1,5 @@
 import 'package:chopper/chopper.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'recipe_model.dart';
 import 'model_response.dart';
 import 'model_converter.dart';
@@ -7,11 +8,12 @@ import 'service_interface.dart';
 part 'recipe_service.chopper.dart';
 
 
-// const String apiKey = '3ab98bd388f7397096cdfc453041a7be';
-// const String apiId = '01cd727b';
+// const String apiKey = '';
+// const String apiId = '';
 
-const String apiKey = '';
-const String apiId = '';
+final String apiKey = dotenv.get('API_KEY');
+final String apiId = dotenv.get('API_ID');
+
 const String apiUrl = 'https://api.edamam.com';
 
 @ChopperApi()

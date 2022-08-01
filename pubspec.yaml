@@ -31,6 +31,7 @@ dependencies:
   path_provider: ^2.0.2
   synchronized: ^3.0.0
   sqlbrite: ^2.1.0
+  flutter_dotenv: ^5.0.2
 
 
 dev_dependencies:
@@ -54,4 +55,5 @@ flutter:
     - assets/recipes3.json
     - assets/recipes4.json
     - assets/images/
+    - .env
 
